@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+  text-align:center;
+  font-family: sen-serif;
+  background-image: linear-gradient(to bottom, red,green);
+}
+#body{
+  background-color: rgba(0,0,0,0.4);
+  width:600px;
+  margin:auto;
+  text-align: left;
+  padding: 20px;
+  border-radius:10px;
+  color: white;
+}
+#name{
+  width:500px;
+  padding: 12px;
+  border-radius:10px;
+   border:none;
+}
+#email{
+  width:500px;
+  padding: 12px;
+  border-radius:10px;
+   border:none;
+}
+#number{
+  width:500px;
+  padding: 12px;
+  border-radius:10px;
+  border:none;
+}
+#comments{
+  width:500px;
+  padding:10px;
+}
+#comments:hover{
+  padding:20px;
+}
+#dropdown{
+  width:530px;
+  padding:12px;
+  border-radius:10px;
+  font-size: 15px;
+}
+#submit{
+  width:560px;
+  margin:0 0 0 10px;
+  padding:20px;
+  fontsize:20px;
+  margin-top:2%;
+  border:none;
+  border-radius:10px;
+}
+</style>
+</head>
+<body> 
+<h1 id="title">Survey Form</h1>
+<p id="description">Thank You For Helping Us To Improve Platform </p>
+<div id="body">
+<form id="survey-form">
+  
+  <label id="name-label" for="name">
+    <p>Name:</p>
+  </label>
+  <input id="name" type="text" placeholder="Enter  Name" required>
+  
+  <label id="email-label" for="email">
+    <p>Email:</p>
+    </label>
+  <input id="email" type="email" placeholder="Enter Email" required>
+  
+  <label id="number-label" for="age">
+    <p>Age:</p>
+    </label>
+  <input id="number" type="number" placeholder="Enter Your Age" min="12" max="50" required>
+  
+  <p>Tell Us What You Want ?</p>
+  
+<select id="dropdown">
+  <option value="default">Everything</option>
+  <option value="default">Degree</option>
+  <option value="default">Doctarate</option>
+  <option value="default">PG</option>
+</select>
+  
+  <p>What You Are Looking For</p>
+  <input type="radio" name="course" value="1">B.E/B.tech</input><br>
+  <input type="radio" name="course" value="2">M.tech</input><br>
+  <input type="radio" name="course" value="3">M.s</input><br>
+  <input type="radio" name="course" value="4">MBA</input><br>
+  <input type="radio" name="course" value="5">MBBS</input><br>
+  <input type="radio" name="course" value="6">PG course</input><br>
+  <input type="radio" name="course" value="7">DEGREE</input>
+  <br>
+<p>What Are You Doing At Present</p>
+<input type="checkbox" name="course" value="1">B.E/B.Tech</input><br>
+<input type="checkbox" name="course" value="2">MBBS</input><br>
+<input type="checkbox" name="course" value="3">M.Tech</input><br>
+<input type="checkbox" name="course" value="4">MS</input><br>
+<input type="checkbox" name="course" value="4">MBA</input><br>
+<p>Any Help or Advice </p>
+<textarea id="comments" rows="4" cols="40">please write here</textarea>
+<input id="submit" type="submit" value="submit"></input>
+</form>
+</div>
+</body>
+</html>
